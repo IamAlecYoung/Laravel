@@ -16,5 +16,9 @@ Route::get('/', function () {
 });
 
 Route::get('/alec', function(){
-    return "Working";
+    return view('Alec');
+});
+
+Route::get('Users', function(){
+    return "working";
 });
