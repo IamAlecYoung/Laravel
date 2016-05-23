@@ -39,8 +39,18 @@
         <div class="container">
             <div class="content">
                 <div class="title">Alec is my name</div>
-                <p>Don't wear it out #90's joke</p>
+                <p>Don't wear it out #90's joke </p>
             </div>
         </div>
+
+        @unless (empty($people))
+            {{ "there are people" }}
+        @else
+            {{ "No people" }}
+        @endunless
+
+        @foreach ($people as $person)
+              <li> {{ $person }} </li>
+            @endforeach
     </body>
 </html>
