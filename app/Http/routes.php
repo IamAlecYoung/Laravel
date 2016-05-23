@@ -21,14 +21,8 @@ Route::get('Users', function(){
     return "working";
 });*/
 
-//Route::get('/', 'PagesController@home');
-Route::get('/', function() {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@home');
 
-Route::get('/alec', function(){
-  $people = ["Alec", "Taylor", "Vince"];
-  return view('Alec', compact('people'));
-});
+Route::get('alec', 'PagesController@alec');
 
 Route::get('about', 'PagesController@about');
