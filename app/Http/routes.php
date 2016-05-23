@@ -11,6 +11,7 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,4 +23,7 @@ Route::get('/alec', function(){
 
 Route::get('Users', function(){
     return "working";
-});
+});*/
+
+Route::get('/', 'PagesController@home');
+Route::get('about', 'PagesController@about');
