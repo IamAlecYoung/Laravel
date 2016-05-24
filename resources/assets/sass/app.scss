@@ -1,7 +1,12 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-$colour: red;
+$bgcolour: red;
+$textcolour: white;
 
 body {
-    color: $colour;
+    background-color: $bgcolour;
+}
+
+h1 {
+  color: $textcolour;
 }
