@@ -26,3 +26,13 @@ Route::get('/', 'PagesController@home');
 Route::get('alec', 'PagesController@alec');
 
 Route::get('about', 'PagesController@about');
+
+Route::get('cards', 'CardController@index');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
