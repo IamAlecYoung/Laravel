@@ -10,6 +10,6 @@
 
 @section('footer')
 
-    <script>alert("About page")</script>
+    <!--<script>alert("About page")</script>-->
 
 @stop
